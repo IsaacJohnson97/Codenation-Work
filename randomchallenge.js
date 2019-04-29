@@ -24,3 +24,31 @@ account(){
 }};
 
     console.log(person.account())
+
+    /* Write a jvascript program to get the current date. */
+
+    const currentDate = {
+
+        day: "Monday",
+        date: 29,
+        month: "April",
+
+
+    };
+
+ console.log(` The date today is ${currentDate.day} ${currentDate.date}th ${currentDate.month}`);
+
+    /* Catching errors! */
+
+    var x = 99;
+    try {
+          if(x < 0) throw "too low";
+          if(x > 6) throw "too high";
+    }
+    catch(err) {
+          console.log(err);
+    };
+
+
+
+
