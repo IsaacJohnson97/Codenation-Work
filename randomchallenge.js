@@ -49,6 +49,14 @@ account(){
           console.log(err);
     };
 
+    /* Reversing a string */
+
+    string = "Codenation";
+
+    for(s = string.length() - 1; s >= 0; s--){
+        console.log(`${string}`)
+    };
+
 
 
 
