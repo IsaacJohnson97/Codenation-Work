@@ -49,14 +49,52 @@ account(){
           console.log(err);
     };
 
-    /* Reversing a string */
+    /* Reversing a string 
 
     string = "Codenation";
 
     for(s = string.length() - 1; s >= 0; s--){
         console.log(`${string}`)
     };
+*/
+/* Create a function that takes one parameter (fruits) and
+checks whether it is bananas or pears.
+If it is then log to the console a template string which says “awesome cheers, I like (fruits)”
+ else log to the console “No thanks, I don’t like (fruits)” */
+
+ let fruits = "Pears";
+
+ if (fruits == "Bananas"|| fruits == "Pears"){
+    console.log(`Awesome cheers, I like ${fruits}`)
+ } 
+ else if (fruits !== "Bananas"|| fruits !== "Pears"){
+    console.log(`No thanks, I dont like ${fruits}`)
+
+ };
+
+ /* Write a function called dataChecker which takes two parameters (string, number).
+If the string is equal to ‘codenation’ and the number is equal to 1 
+then log to the console a template string to tell us both are correct.
+If the string is ‘codenation’ but the number isn’t 1 log to the console a template string that tells us 
+the string was correct but the number was wrong. Finally if the string was not equal to ‘codenation’ 
+then log to the console a template string which tells us that the string was wrong. */
+
+let string1 = "codenation";{
+let num1 = 1;
+
+function dataChecker(){
 
 
+    if (string1 == "codenation" && num1 == 1)
+    return `Correct`
+
+    else if (string1 !== "codenation")
+    return `Your string was incorrect`
+
+    else 
+    return `Your number was incorrect`
+
+}};
+ console.log(dataChecker());
 
 
