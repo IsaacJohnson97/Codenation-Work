@@ -1,0 +1,157 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="finished.css">
+    <style>
+        .mySlides {display:none;}
+        .mySlides1 {display:none;}
+       
+    </style>
+   
+   <link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+   <div class= "nav">
+    <ul> 
+        <a style="float:left; color:#EE6D00" href="index.html" >
+            <i class="fa fa-2x fa-fw fa-home"></i></a>
+        <li><a href="https://www.nbrown.co.uk/about-us">ABOUT US</a></li>
+        <li><a href="https://www.nbrown.co.uk/our-operations/our-brands">OUR OPERATIONS</a></li>
+        <li><a href="https://www.nbrown.co.uk/investors">INVESTORS</a></li>
+        <li><a href="https://www.nbrown.co.uk/sustainability">SUSTAINABILITY</a></li>
+        <li><a href="https://www.nbrown.co.uk/media">MEDIA</a></li>
+        <li><a href="http://nbrowncareers.co.uk">CAREERS</a></li>
+        <div class= "list"> <a>
+            <iframe  height="20" src="https://secure.flife.de/ir/data/n_brown_group_plc/ticker.php"  frameborder="0" width="100%" allowtransparency="true" marginheight="0" marginwidth="0" class="externalwebIFrame responsive" id="ExternalWebContentExternalIFrame12"></iframe>
+        </a>
+        
+    </ul>
+    </div>
+
+    <style>
+        .footer1 {
+          clear: both;
+          position: relative;
+          top: 300px;
+        }
+        </style>
+      
+      <style>
+          .footer2 {
+            clear: both;
+            position: relative;
+            top: 300px;
+          }
+          </style>
+
+    
+</head>
+
+<body>
+    <a class="top"></a>
+    
+    <div class="searchBar">
+            <input type="text" placeholder="Search..">
+    </div>
+        
+    
+
+    <div class="w3-content w3-section" >
+        <img align="right" class="mySlides w3-animate-right" src="images/banner1.png" >
+        <img align="right" class="mySlides w3-animate-right" src="images/banner2.png" >
+        <img align="right" class="mySlides w3-animate-right" src="images/banner3.png" >
+    </div>     
+    </div>
+    
+      
+      
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+        </script>
+
+
+<div class="w3-content w3-display-container">
+        <img class="mySlides1" src="images/jd.png">
+        <img class="mySlides1" src="images/simplybe.png">
+        <img class="mySlides1" src="images/jacamo.png">
+
+        <button class="buttonLeft" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="buttonRight" onclick="plusDivs(1)">&#10095;</button>
+</div>
+   
+
+<script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides1");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+</script>
+
+<div class="mid">
+  <img align="left" src="images/mid.png">
+</div>
+
+<div class="tvad">
+    <img align="left" src="images/tvad.png">
+</div>
+  
+<div class="report3">
+      <img align="left" src="images/report3.png">
+</div>
+
+<div class="youtube">  
+<iframe width="600" height="300" src="https://www.youtube.com/embed/ui3r-Gh81C0">
+</iframe>
+</div>
+
+<div class="safe">
+    <img align="left" src="images/safe.png">
+</div>
+
+
+<div>
+<a class="readMore" href="https://www.nbrown.co.uk/sustainability/product" ><b>READ MORE</b></a>
+</div>
+
+
+<div class= "footer1">
+    <ul> 
+        <li><a href="https://www.nbrown.co.uk/site-services/accessibility">Accessibility</a></li>
+        <li><a href="https://www.nbrown.co.uk/~/media/Files/N/N-Brown/documents/n-brown-group-modern-slavery-statement-oct-2018.pdf">Modern Slavery Statement</a></li>
+        <li><a href="https://www.nbrown.co.uk/site-services/privacy">Privacy</a></li>
+        <li><a href="https://www.nbrown.co.uk/site-services/disclaimer">Disclaimer</a></li>
+        <li><a href="https://www.nbrown.co.uk/site-services/contact-us">Contact us</a></li>
+        <li><a href="https://www.nbrown.co.uk/site-services/site-map">Site map</a></li>        
+    </ul>
+    </div>
+    <a class="top" href="#top">^</a>
+</body>
+
+
+    
