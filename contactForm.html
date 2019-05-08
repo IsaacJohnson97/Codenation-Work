@@ -1,0 +1,114 @@
+
+<html>
+        <head>
+          <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">  
+          <link rel="stylesheet" type="text/css" href="finished1.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+              .parallax {
+                /* The image used */
+                background-image: url("c.gif");
+              
+                /* Set a specific height */
+                min-height: 1000px; 
+              
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              </style>
+</head>
+
+<body>
+    
+   
+   
+  <div class="title">CONTACT FORM</div>
+    
+    
+    <div class="parallax"></div>
+
+      
+    
+<div id="contact-form">
+        
+                <div>
+                  <label for="name">
+                      <span class="required">Name: *</span> 
+                      <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+                  </label> 
+                </div>
+                <div>
+                  <label for="email">
+                      <span class="required">Email: *</span>
+                      <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+                  </label>  
+                </div>
+                <div>		          
+                  <label for="subject">
+                  <span>Subject: </span>
+                      <select id="subject" name="subject" tabindex="4">   
+                         <option value="hello">What kind of message do you want to send?</option>
+                         <option value="quote">General</option>  
+                         <option value="general">Buisness</option>
+                         <option value="general">Urgent</option>
+                        </select>
+                  </label>
+                </div>
+                <div>		          
+                  <label for="message">
+                      <span class="required">Message: *</span> 
+                      <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+                  </label>  
+                </div>
+                <div>
+                  <input type="button" class="bt" value="Save data to file" onclick="saveFile()" />
+              </div>
+               </form>
+    
+        </div>
+
+
+
+          <script src="contact.js"></script>
+</body>
+
+<script>
+  let saveFile = () => {
+    
+      // Get the data from each element on the form.
+    const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const subject = document.getElementById('subject');
+      const message = document.getElementById('message');
+      
+      
+      // This variable stores all the data.
+      let data = 
+          '\r name: ' + name.value + ' \r\n ' + 
+          'email: '   + email.value + ' \r\n ' + 
+          'subject: ' + subject.value + ' \r\n ' + 
+          'message: ' + message.value; 
+         
+      
+      // Convert the text to BLOB.
+      const textToBLOB = new Blob([data], { type: 'text/plain' });
+      const sFileName = 'formData.txt';	   // The file to save the data.
+
+      let newLink = document.createElement("a");
+      newLink.download = sFileName;
+
+      if (window.webkitURL != null) {
+          newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+      }
+      else {
+          newLink.href = window.URL.createObjectURL(textToBLOB);
+          newLink.style.display = "none";
+          document.body.appendChild(newLink);
+      }
+
+      newLink.click(); 
+  }
+</script>
